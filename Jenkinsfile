@@ -6,7 +6,7 @@ pipeline {
     }
     stages {
         stage("build") {
-            step {
+            steps {
                 echo 'building the application'
             }
         }
@@ -16,12 +16,12 @@ pipeline {
                     params.executeTests
                 }
             }
-            step {
+            steps {
                 echo 'testing the application'
             }
         }
         stage{"deploy"} {
-            step {
+            steps {
                 echo 'deploying the application'
                 echo "deploying version ${params.VERSION}"
             }
