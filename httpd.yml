@@ -1,7 +1,7 @@
 ---
 - name: Installing httpd softwares
   hosts: tag_Name_Ansible
-  remote_user: ec2-user
+  remote_user: jenkins
   become: true
   tasks:
     - name: Install httpd package
