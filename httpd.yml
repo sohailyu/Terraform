@@ -1,6 +1,6 @@
 ---
 - name: Installing httpd softwares
-  hosts: tag_Name_Ansible
+  hosts: tag_Name_{{ SERVER }}
   remote_user: jenkins
   become: true
   tasks:
