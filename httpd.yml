@@ -1,7 +1,7 @@
 ---
 - name: Installing httpd softwares
   hosts: tag_Name_{{ SERVER }}
-  remote_user: jenkins
+  remote_user: {{ USER }}
   become: true
   tasks:
     - name: Install httpd package
